@@ -1,0 +1,135 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Reminder Study</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Share+Tech+Mono&family=VT323&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cfb9932e5b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <header class=" container header-container">
+            <h1 id="title">Reminded by your phone</h1>
+            <p id="description">
+                You are using your phone to set reminders for tasks and events? We want to hear your
+                experience.
+            </p>
+        </header>
+
+        <form id="survey-form">
+
+            <section class="container question-container">
+                <h2>What smartphone operating system do you use primary?</h2>
+                <div class="radio-list">
+                    <label for="android" class="radio-item">
+                        <input id="android" type="radio" name="os" value="android">
+                        <span class="radiomark"></span>
+                        Android
+                    </label>
+                    <label for="ios" class="radio-item">
+                        <input id="ios" type="radio" name="os" value="ios">
+                        <span class="radiomark"></span>
+                        iOS
+                    </label>
+                    <label for="windows" class="radio-item">
+                        <input id="windows" type="radio" name="os" value="windows">
+                        <span class="radiomark"></span>
+                        Windows
+                    </label>
+                    <label for="other" class="radio-item">
+                        <input id="other" type="radio" name="os" value="other">
+                        <span class="radiomark"></span>
+                        Other
+                        <input class="text-input" id="otheros" type="text" name="os" placeholder="operation system...">
+                    </label>
+                    <label for="none" class="radio-item">
+                        <input id="none" type="radio" name="os" value="none">
+                        <span class="radiomark"></span>
+                        I don't use a smartphone
+                    </label>
+                    <label for="knowledge" class="radio-item">
+                        <input id="knowledge" type="radio" name="os" value="knowledge">
+                        <span class="radiomark"></span>
+                        I don't know
+                    </label>
+                </div>
+            </section>
+
+            <section class="container question-container">
+                <h2>How many application do you have installed on your phone?</h2>
+                <label for="number" id="number-label">Number of Apps<input class="roboto-24px text-input" id="number"
+                        type="number" min="1" max="9999" placeholder="Type your answer..."></label>
+            </section>
+
+            <section class="container question-container">
+                <h2> Do you use your phone to set reminders for upcoming tasks or events such as birthdays,
+                    meetings, or appointments?"</h2>
+                <label for="dropdown" class="custom-select" style="width: 200px;">
+                    <select class="roboto-24px select-button" id="dropdown">
+                        <option value="none">
+                            <p>Select your answer</p> <i class="fas fa-chevron-down"></i>
+                        </option>
+                        <option value="1">yes</option>
+                        <option value="0">no</option>
+                    </select>
+                </label>
+            </section>
+
+            <section class="container question-container">
+                <h2>Which of the following applications are you using for managing your tasks and events?
+                </h2>
+                <div class="check-list">
+                    <label for="googleCalendar" class="checkbox-item">
+                        <input id="googleCalendar" type="checkbox" name="googleCalendar" value="googleCalendar"
+                            checked="checked">
+                        <span class="checkmark"></span>
+                        Google Calendar
+                    </label>
+                    <label for="protonCalendar" class="checkbox-item">
+                        <input id="protonCalendar" type="checkbox" name="protonCalendar" value="protonCalendar">
+                        <span class="checkmark"></span>
+                        Proton Calendar
+                    </label>
+                    <label for="other-app" class="checkbox-item">
+                        <input id="other-app" type="checkbox" name="other" value="other">
+                        <span class="checkmark"></span>
+                        I'm using another app called
+                        <input class="text-input" id="alternative" type="text" name="alternative"
+                            placeholder="application...">
+                    </label>
+                    <label for="no-app" class="checkbox-item">
+                        <input id="no-app" type="checkbox" name="no-app" value="no-app">
+                        <span class="checkmark"></span>
+                        I'm not using any application.
+                    </label>
+                </div>
+            </section>
+
+            <section class="container question-container">
+                <h2>How do you make sure that you don't miss any important event or appointment?</h2>
+                <textarea class="roboto-24px" id="myTextarea" rows="1" name=""
+                    placeholder="Describe your strategy..."></textarea>
+            </section>
+
+            <section class="container question-container">
+                <h2>Do you mind to share some information to keep in touch?</h2>
+                <label for="name" id="name-label">Name<input class="roboto-24px text-input" required id="name"
+                        type="text" placeholder="Your Name"></label>
+
+                <label for="email" id="email-label">Email<input class="roboto-24px text-input" required id="email"
+                        type="email" placeholder="Your Email address"></label>
+            </section>
+
+            <input type="submit" id="submit">
+        </form>
+    </main>
+</body>
+
+</html>
