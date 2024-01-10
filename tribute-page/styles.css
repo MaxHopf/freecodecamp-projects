@@ -1,0 +1,84 @@
+* {
+    /* Smooth scroll instead of jump */
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-dark-text: hsla(0, 0%, 0%, 0.87);
+    --color-light-text: #FAFAFA;
+    --color-black: hsla(0, 0%, 0%, 0.87);
+    --color-white: #FAFAFA;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--color-white);
+    /* Typography */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--color-text);
+    /* Layout */
+    width: 80%;
+    max-width: 960px;
+    margin: auto;
+}
+
+h1,
+.h1 {
+    font-size: 4.25rem;
+    line-height: 5.25rem;
+    margin-top: 1.75rem;
+    margin-bottom: 3.5rem;
+}
+
+figcaption {
+    font-size: 0.8rem;
+}
+
+main {
+    padding-bottom: 56px;
+}
+
+img {
+    display: block;
+}
+
+#image {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#img-div,
+figure {
+    width: 350px;
+    margin: auto;
+    padding: 0;
+}
+
+#title {
+    text-align: center;
+}
+
+#tribute-info {
+    margin-top: 48px;
+    margin-bottom: 32px;
+}
+
+#tribute-link {
+    display: inline-block;
+    background-color: var(--color-black);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 16px 0;
+    color: var(--color-light-text);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    box-shadow: 4px 4px 16px 4px #21212132;
+}
